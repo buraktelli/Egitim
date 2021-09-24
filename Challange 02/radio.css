@@ -1,0 +1,200 @@
+.radio-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------------------------------------------------------- */
+.regular-radio {
+    display: none;
+}
+.regular-radio + label {
+    background-color: #fcf8f8;
+    border-radius: 50px;
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 -15px 10px -12px rgba(0, 0, 0, 0.5) inset; */
+    display: inline-block;
+    padding: 12px;
+    position: relative;
+    border: none;
+    margin: 5px;
+    /* width: 50px; */
+}
+.regular-radio + label:hover {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 -15px 10px -12px rgba(0, 0, 0, 0.5) inset;
+    display: inline-block;
+    padding: 12px;
+    margin: 5px;
+    
+}
+.regular-radio + label:before {
+    background: none repeat scroll 0 0 #0e0d0d;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
+    content: " ";
+    font-size: 36px;
+    height: 18px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 18px;
+}
+.regular-radio:checked + label:before {
+    background: none repeat scroll 0 0 #0c0b0b;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
+    content: " ";
+    font-size: 36px;
+    height: 18px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 18px;
+}
+.regular-radio:checked + label {
+    background-color: #fcf8f8;
+    border: 2px solid #0d0d0e;
+    color: #99a1a7;
+    padding: 12px;
+}
+/* .regular-radio + label:active, .regular-radio:checked + label:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+} */
+
+
+/* ---------------------------------------------------------------- */
+
+.regular-radio2 {
+    display: none;
+}
+.regular-radio2 + label {
+    background-color: #fcf8f8;
+    border: 2px solid red;
+    border-radius: 50px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 -15px 10px -12px rgba(0, 0, 0, 0.05) inset;
+    display: inline-block;
+    padding: 12px;
+    position: relative;
+    border: none;
+    margin: 5px;
+}
+.regular-radio2 + label:hover {
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    border-radius: 50px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 -15px 10px -12px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 12px;
+    position: relative;
+    margin: 5px;
+    
+}
+.regular-radio2 + label:before {
+    background: none repeat scroll 0 0 red;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
+    content: " ";
+    font-size: 36px;
+    height: 18px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 18px;
+}
+.regular-radio2:checked + label {
+    background-color: #fcf8f8;
+    border: 2px solid red;
+    color: #99a1a7;
+    padding: 12px;
+}
+
+/* ---------------------------------------------------------------- */
+
+.regular-radio3 {
+    display: none;
+}
+.regular-radio3 + label {
+    background-color: #fcf8f8;
+    border: 2px solid red;
+    border-radius: 50px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 -15px 10px -12px rgba(0, 0, 0, 0.05) inset;
+    display: inline-block;
+    padding: 12px;
+    position: relative;
+    border: none;
+    margin: 5px;
+}
+.regular-radio3 + label:hover {
+    border: 2px solid rgba(0, 0, 255, 0.5);
+    border-radius: 50px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 -15px 10px -12px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 12px;
+    position: relative;
+    margin: 5px;
+    
+}
+.regular-radio3 + label:before {
+    background: none repeat scroll 0 0 blue;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
+    content: " ";
+    font-size: 36px;
+    height: 18px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 18px;
+}
+.regular-radio3:checked + label {
+    background-color: #fcf8f8;
+    border: 2px solid blue;
+    color: #99a1a7;
+    padding: 12px;
+}
+
+/* ---------------------------------------------------------------- */
+
+.regular-radio4 {
+    display: none;
+}
+.regular-radio4 + label {
+    background-color: #fcf8f8;
+    border: 2px solid red;
+    border-radius: 50px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 -15px 10px -12px rgba(0, 0, 0, 0.05) inset;
+    display: inline-block;
+    padding: 12px;
+    position: relative;
+    border: none;
+    margin: 5px;
+}
+.regular-radio4 + label:hover {
+    border: 2px solid rgba(0, 255, 0, 0.5);
+    border-radius: 50px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 -15px 10px -12px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 12px;
+    position: relative;
+    margin: 5px;
+    
+}
+.regular-radio4 + label:before {
+    background: none repeat scroll 0 0 green;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
+    content: " ";
+    font-size: 36px;
+    height: 18px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 18px;
+}
+.regular-radio4:checked + label {
+    background-color: #fcf8f8;
+    border: 2px solid green;
+    color: #99a1a7;
+    padding: 12px;
+}
