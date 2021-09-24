@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="select.css">
+    <link rel="stylesheet" href="checkbox.css">
+    <link rel="stylesheet" href="radio.css">
+
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+    <div class="select-list">
+        <div id="cicek" class="select" tabindex="0">
+            <span class="init">Çiçek Seçiniz</span>
+            <ul class="ul-class" onclick="clickfunc(event.target.innerHTML)">
+                <li>Çiçek Seçiniz</li>
+                <li>Lale</li>
+                <li>Gül</li>
+                <li>Fil</li>
+            </ul>
+        </div>
+        <div id="bocek" class="select" tabindex="0">
+            <span class="init">Böcek Seçiniz</span>
+            <ul class="ul-class" onclick="clickfunc2(event.target.innerHTML)">
+                <li>Böcek Seçiniz</li>
+                <li>Karınca</li>
+                <li>Sinek</li>
+                <li>Sivri</li>
+                <li>Fil</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+    <label class="switch">
+        OKUDUM,ANLADIM
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+    </label>
+    <hr>
+    RENK SEÇİNİZ
+    <div class="radio-list">
+        <input checked="true" type="radio" class="regular-radio" name="radio-1-set" id="radio-1-set">
+        <label for="radio-1-set">
+
+        </label>
+
+        <input checked="false" type="radio" class="regular-radio2" name="radio-1-set" id="radio-2-set">
+        <label for="radio-2-set">
+
+        </label>
+
+        <input checked="false" type="radio" class="regular-radio3" name="radio-1-set" id="radio-3-set">
+        <label for="radio-3-set">
+
+        </label>
+
+        <input checked="false" type="radio" class="regular-radio4" name="radio-1-set" id="radio-4-set">
+        <label for="radio-4-set">
+
+        </label>
+    </div>
+</body>
+
+</html>
