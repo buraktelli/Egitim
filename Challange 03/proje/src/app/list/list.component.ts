@@ -1,17 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-
-export interface PeriodicElement {
-  first_name: string;
-  last_name: string;
-}
-
-const ELEMENT_DATA: PeriodicElement[] = [
-  {first_name: 'burak', last_name: 'telli'},
-  {first_name: 'burak', last_name: 'telli'},
-  {first_name: 'burak', last_name: 'telli'},
-  {first_name: 'burak', last_name: 'telli'},
-  
-];
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-list',
@@ -20,15 +7,20 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class AppListComponent implements OnInit {
   displayedColumns: string[] = ['first_name', 'last_name'];
-  public dataSource = ELEMENT_DATA;
+  public dataSource = [];
 
   constructor() { }
+
+  @Input() set data(value: any) {
+    this.dataSource = value
+  }
+
   @Output() public buttonClick = new EventEmitter();
 
   ngOnInit(): void {
   }
 
-  addToList(event: any){
+  addToList(event: any) {
     this.buttonClick.emit()
   }
 

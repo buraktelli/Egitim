@@ -10,14 +10,18 @@
         background-color: aqua;
         margin: 5px;
         width: 800px;
-        height: 150px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .list-container {
         margin: 5px;
         width: 800px;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
     }
 }

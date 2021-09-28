@@ -1,10 +1,18 @@
 <div class="container">
   <div class="form-container">
-    <app-form></app-form>
+
+    <app-form [getForm]="getForm" (sendForm)="form($event)"></app-form>
+
   </div>
+
+  <button mat-fab (click)="deleteAllList()" color="primary" aria-label="Example icon button with a delete icon">
+    <mat-icon>delete</mat-icon>
+  </button>
+
   <div class="list-container">
-    <app-list (buttonClick)="firstButtonClick()"></app-list>
-    
-    <app-list (buttonClick)="secondButtonClick()"></app-list>
+
+    <app-list [data]="data_list1" (buttonClick)="buttonClick(Button.FIRST_BUTTON)"></app-list>
+    <app-list [data]="data_list2" (buttonClick)="buttonClick(Button.SECOND_BUTTON)"></app-list>
+
   </div>
 </div>

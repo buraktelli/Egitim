@@ -1,1 +1,19 @@
-<p>form works!</p>
+<form [formGroup]="form" class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>First Name</mat-label>
+        <input matInput formControlName="first_name">
+        <button *ngIf="form.controls['first_name'].value !== ''" matSuffix mat-icon-button aria-label="Clear"
+            (click)="form.controls['first_name'].setValue('')">
+            <mat-icon>close</mat-icon>
+        </button>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="last_name">
+        <button *ngIf="form.controls['last_name'].value !== ''" matSuffix mat-icon-button aria-label="Clear"
+            (click)="form.controls['last_name'].setValue('')">
+            <mat-icon>close</mat-icon>
+        </button>
+    </mat-form-field>
+</form>
