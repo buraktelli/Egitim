@@ -11,8 +11,8 @@
 
   <div class="list-container">
 
-    <app-list [data]="data_list1" (buttonClick)="buttonClick(Button.FIRST_BUTTON)"></app-list>
-    <app-list [data]="data_list2" (buttonClick)="buttonClick(Button.SECOND_BUTTON)"></app-list>
+    <app-list (buttonClick)="buttonClick(Button.FIRST_BUTTON)"></app-list>
+    <app-list (buttonClick)="buttonClick(Button.SECOND_BUTTON)"></app-list>
 
   </div>
 </div>
